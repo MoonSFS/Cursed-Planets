@@ -1,0 +1,127 @@
+{
+  "version": "1.5",
+  "BASE_DATA": {
+    "radius": 38940.0,
+    "radiusDifficultyScale": {},
+    "gravity": 0.38,
+    "gravityDifficultyScale": {},
+    "timewarpHeight": 3000.0,
+    "velocityArrowsHeight": "NaN",
+    "mapColor": {
+      "r": 0.65,
+      "g": 0.61,
+      "b": 0.65,
+      "a": 1.0
+    }
+  },
+  "ATMOSPHERE_VISUALS_DATA": {
+    "GRADIENT": {
+      "positionZ": 2500,
+      "height": 15000.0,
+      "texture": "None"
+    },
+    "CLOUDS": {
+      "texture": "None",
+      "startHeight": 0.0,
+      "width": 1.0,
+      "height": 1.0,
+      "alpha": 1.0,
+      "velocity": 1.0
+    },
+    "FOG": {
+      "keys": []
+    }
+  },
+  "TERRAIN_DATA": {
+    "TERRAIN_TEXTURE_DATA": {
+      "planetTexture": "Titania",
+      "planetTextureCutout": 0.99,
+      "surfaceTexture_A": "Dark_Dust",
+      "surfaceTextureSize_A": {
+        "x": 20.0,
+        "y": 8.0
+      },
+      "surfaceTexture_B": "Hard_Rocks",
+      "surfaceTextureSize_B": {
+        "x": 40.0,
+        "y": 16.0
+      },
+      "terrainTexture_C": "Soft_Rocks",
+      "terrainTextureSize_C": {
+        "x": 280.0,
+        "y": 145.0
+      },
+      "surfaceLayerSize": 60.0,
+      "minFade": 0.0,
+      "maxFade": 0.6,
+      "shadowIntensity": 4.0,
+      "shadowHeight": 2.0
+    },
+    "terrainFormulaDifficulties": {
+      "normal": [
+        "PLAINS = AddHeightMap(Mercury_Plains, 753982.236861550, 1)",
+        "OUTPUT = AddHeightMap(Mercury,753982.236861550, 500)",
+        "OUTPUT = AddHeightMap(Craters,75398.223686155, 350, null, PLAINS)",
+        "OUTPUT = AddHeightMap(Craters,15079.644737231, 100, null, PLAINS)",
+        "OUTPUT = AddHeightMap(Craters,2356.19449019234, 12, null, PLAINS)",
+        "OUTPUT = AddHeightMap( Perlin,2513.27412287183, 3)",
+        "OUTPUT = AddHeightMap( Perlin,1675.51608191456, 3.0, Pow3)",
+        "OUTPUT = AddHeightMap( Perlin,4243.19007757582, 8.0, Pow3)",
+        "OUTPUT = AddHeightMap( Perlin,13069.0254389335, 30, Pow3)",
+        "OUTPUT = AddHeightMap( Perlin,1089.08545324446, 2.0, Pow3)"
+      ]
+    },
+    "textureFormula": [],
+    "verticeSize": 2.0,
+    "collider": true,
+    "flatZones": []
+  },
+  "POST_PROCESSING": {
+    "keys": [
+      {
+        "height": 500.0,
+        "shadowIntensity": 1.4,
+        "starIntensity": 1.0,
+        "hueShift": 5.0,
+        "saturation": 1.0,
+        "contrast": 1.05,
+        "red": 1.0,
+        "green": 1.0,
+        "blue": 1.0
+      },
+      {
+        "height": 15000.0,
+        "shadowIntensity": 1.65,
+        "starIntensity": 1.0,
+        "hueShift": 5.0,
+        "saturation": 1.0,
+        "contrast": 1.025,
+        "red": 1.0,
+        "green": 1.0,
+        "blue": 1.0
+      }
+    ]
+  },
+  "ORBIT_DATA": {
+    "parent": "Uranus",
+    "semiMajorAxis": 21795500.0,
+    "smaDifficultyScale": {
+      "normal": 1.0,
+      "hard": 2.5,
+      "realistic": 25.0
+    },
+    "eccentricity": 0.0288,
+    "argumentOfPeriapsis": 0.0,
+    "direction": 1,
+    "multiplierSOI": 1.5,
+    "soiDifficultyScale": {}
+  },
+  "ACHIEVEMENT_DATA": {
+    "Landed": true,
+    "Takeoff": true,
+    "Atmosphere": true,
+    "Orbit": true,
+    "Crash": true
+  },
+  "LANDMARKS": []
+}
